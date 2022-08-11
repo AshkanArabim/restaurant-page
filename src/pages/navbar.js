@@ -8,7 +8,7 @@ const makeNavbar = (function() {
     for(let nameIndex in names) {
         window[names[nameIndex]] = document.createElement('li');
         window[names[nameIndex]].id = `${names[nameIndex]}btn`;
-        window[names[nameIndex]].textcontent = names[nameIndex];
+        window[names[nameIndex]].textContent = names[nameIndex];
         
         ul.appendChild(window[names[nameIndex]]);
     }
@@ -16,4 +16,6 @@ const makeNavbar = (function() {
     content.appendChild(nav);
     nav.appendChild(ul);
     ul.appendChild(selector);
+    
+    console.log(nav);
 }) ();
