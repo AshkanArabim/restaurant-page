@@ -6,19 +6,14 @@ const makeNavbar = (function() {
     
     const names = ['menu','home','about'];
     for(let nameIndex in names) {
-        let element = window[names[nameIndex]];
-
-        element = document.createElement('li');
-        element.id = `${names[nameIndex]}btn`;
-        element.textcontent = names[nameIndex];
-
-        ul.appendChild(element);
+        window[names[nameIndex]] = document.createElement('li');
+        window[names[nameIndex]].id = `${names[nameIndex]}btn`;
+        window[names[nameIndex]].textcontent = names[nameIndex];
+        
+        ul.appendChild(window[names[nameIndex]]);
     }
-
+    
+    content.appendChild(nav);
     nav.appendChild(ul);
     ul.appendChild(selector);
-    content.appendChild(nav);
-    
-    console.log(content);
-    console.log(nav);
 }) ();
