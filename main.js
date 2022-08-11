@@ -198,7 +198,7 @@ eval("function food(name, price, desc, imagelink) {\n    this.name = name;\n    
   \*****************************/
 /***/ (() => {
 
-eval("const makeNavbar = (function() {\n    const nav = document.createElement('nav');\n    const ul = document.createElement('ul');\n    const selector = document.createElement('div');\n    selector.classList.add('selector');\n    \n    const names = ['menu','home','about'];\n    for(let nameIndex in names) {\n        window[names[nameIndex]] = document.createElement('li');\n        window[names[nameIndex]].id = `${names[nameIndex]}btn`;\n        window[names[nameIndex]].textcontent = names[nameIndex];\n        \n        ul.appendChild(window[names[nameIndex]]);\n    }\n    \n    content.appendChild(nav);\n    nav.appendChild(ul);\n    ul.appendChild(selector);\n}) ();\n\n//# sourceURL=webpack://restaurant-page/./src/pages/navbar.js?");
+eval("const makeNavbar = (function() {\n    const nav = document.createElement('nav');\n    const ul = document.createElement('ul');\n    const selector = document.createElement('div');\n    selector.classList.add('selector');\n    \n    const names = ['menu','home','about'];\n    for(let nameIndex in names) {\n        window[names[nameIndex]] = document.createElement('li');\n        window[names[nameIndex]].id = `${names[nameIndex]}btn`;\n        window[names[nameIndex]].textContent = names[nameIndex];\n        \n        ul.appendChild(window[names[nameIndex]]);\n    }\n    \n    content.appendChild(nav);\n    nav.appendChild(ul);\n    ul.appendChild(selector);\n    \n    console.log(nav);\n}) ();\n\n//# sourceURL=webpack://restaurant-page/./src/pages/navbar.js?");
 
 /***/ })
 
