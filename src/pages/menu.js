@@ -11,7 +11,7 @@ const makeMenu = (function() {
 
     div.appendChild(title);
     title.textContent = 'menu';
-    content.appendChild(div);
+    document.querySelector('body').appendChild(div);
 
     div.classList.add('menu');
 }) ();

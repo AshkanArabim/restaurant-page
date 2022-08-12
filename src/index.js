@@ -5,5 +5,3 @@ import './pages/about';
 import './events';
 import './reset.css';
 import './style.css';
-
-const content = document.querySelector('#content');

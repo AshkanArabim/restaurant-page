@@ -4,18 +4,20 @@
 
 :root{
     --theme: orange;
+    --bgi: #222;
     --br: 20px;
+    --text-width: min(800px, 90vw);
 }
 
 body{
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #ddd;
-}
-
-#content{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+nav{
+    background-color: white;
 }
 
 nav ul{
@@ -31,7 +33,7 @@ nav ul{
     position: absolute;
     width: calc(33% - var(--br) / 2);
     height: 100%;
-    backdrop-filter: invert(100%);
+    backdrop-filter: invert(90%);
     -webkit-backdrop-filter: invert(100%);
     border-left: 5px solid var(--theme);
     border-right: 5px solid var(--theme);
@@ -53,22 +55,58 @@ li{
     padding: 15px;
 }
 
-#content>div{
+li:hover{
+    color: var(--theme);
+}
+
+#body>div{
     background-color: white;
     flex: 1 0 0;
-    padding: 20px;
 }
 
-.home {
+.home, .menu, .about{
+    background-color: white;
     display: none;
 }
 
-.menu {
-    display: none;
+.home.showpage {
+    background-image: url(./assets/coffeeshop.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    top:0px;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    z-index: -1;
+
+    text-align: center;
 }
 
-.about {
-    display: none;
+.home>div{
+    padding: 30px;
+    backdrop-filter: blur(10px) brightness(50%);
+    border-radius: 5px;
+    max-width: var(--text-width);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+h1{
+    font-size: 3rem;
+    color: var(--theme);
+    font-weight: bold;
+}
+
+P{
+    line-height: 1.5rem;
 }
 
 .showpage {

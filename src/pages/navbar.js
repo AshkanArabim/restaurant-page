@@ -13,9 +13,7 @@ const makeNavbar = (function() {
         ul.appendChild(window[names[nameIndex]]);
     }
     
-    content.appendChild(nav);
+    document.querySelector('body').appendChild(nav);
     nav.appendChild(ul);
     ul.appendChild(selector);
-    
-    console.log(nav);
 }) ();

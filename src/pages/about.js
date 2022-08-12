@@ -4,7 +4,7 @@ const makeAbout = (function() {
 
     div.appendChild(title);
     title.textContent = 'about';
-    content.appendChild(div);
+    document.querySelector('body').appendChild(div);
 
     div.classList.add('about');
 }) ();

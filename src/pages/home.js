@@ -1,13 +1,19 @@
 const makeHome = (function() {
-    const div = document.createElement('div');
-    const title = document.createElement('h1');
-    const about = document.createElement('p');
+    const base = document.createElement('div');
+    const container = document.createElement('div');
+    const h1 = document.createElement('h1');
+    const desc = document.createElement('p');
+    const desc2 = document.createElement('p');
+    
+    base.classList.add('home','showpage');
+    
+    h1.textContent = 'AshCafé';
+    desc.textContent = "Good day, sir or ma'am; here, we're happy to take yo money and serve you the best coffee found in this beautiful city. If fact, we think we are so good that we'll happily give you a Benjamin if you bring someone here who leaves unsatisfied!"
+    desc2.textContent = "Use these quick links on the top of the page to get started!"
 
-    div.appendChild(title);
-    div.appendChild(about);
-    title.textContent = 'This is a nice restaurant';
-    about.textContent = "C'mon n' give us yo money. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, illo.";
-    content.appendChild(div);
-
-    div.classList.add('home','showpage');
+    base.appendChild(container);
+    container.appendChild(h1);
+    container.appendChild(desc);
+    container.appendChild(desc2);
+    document.querySelector('body').appendChild(base);
 }) ();
