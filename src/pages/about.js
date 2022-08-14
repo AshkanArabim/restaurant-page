@@ -11,7 +11,7 @@ const makeAbout = (function() {
     ]
 
     container.classList.add('title')
-    base.classList.add('about', 'showpage');
+    base.classList.add('about');
     
     h1.textContent = 'A short history lesson';
 
