@@ -46,6 +46,7 @@ const makeMenu = (function() {
                 const itemName = document.createElement('h3');
                 const itemPrice = document.createElement('h4');
                 const itemDesc = document.createElement('p');
+                const nameAndPrice = document.createElement('div');
 
                 menuItemHolder.id = menuItems[foodIndex].name;
 
@@ -53,8 +54,9 @@ const makeMenu = (function() {
                 itemPrice.textContent = `$${menuItems[foodIndex].price}`;
                 itemDesc.textContent = menuItems[foodIndex].desc;
 
-                menuItemHolder.appendChild(itemName);
-                menuItemHolder.appendChild(itemPrice);
+                menuItemHolder.appendChild(nameAndPrice);
+                nameAndPrice.appendChild(itemName);
+                nameAndPrice.appendChild(itemPrice);
                 menuItemHolder.appendChild(itemDesc);
                 section.appendChild(menuItemHolder);
             }

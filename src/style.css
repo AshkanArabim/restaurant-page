@@ -94,10 +94,30 @@ li:hover{
     gap: 30px;
 }
 
-h1{
-    font-size: 3rem;
+.menu>div>div{
+    text-align: start;
+}
+
+.menu>div>div>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1, h2, h3{
     color: var(--theme);
     font-weight: bold;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1rem;
 }
 
 P{
