@@ -5,7 +5,7 @@ const makeHome = (function() {
     const desc = document.createElement('p');
     const desc2 = document.createElement('p');
     
-    base.classList.add('home');
+    base.classList.add('home', 'showpage');
     
     h1.textContent = 'AshCafé';
     desc.textContent = "Good day, sir or ma'am; here, we're happy to take yo money and serve you the best coffee found in this beautiful city. If fact, we think we are so good that we'll happily give you a Benjamin if you bring someone here who leaves unsatisfied!"

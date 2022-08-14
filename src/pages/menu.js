@@ -15,7 +15,7 @@ const makeMenu = (function() {
     h1.textContent = 'Menu';
 
     titleContainer.classList.add('title')
-    base.classList.add('menu', 'showpage');
+    base.classList.add('menu');
 
     base.appendChild(titleContainer);
     titleContainer.appendChild(h1);
@@ -61,7 +61,6 @@ const makeMenu = (function() {
                 section.appendChild(menuItemHolder);
             }
         }
-
         base.appendChild(section)
     }
     
