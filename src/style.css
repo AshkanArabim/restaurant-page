@@ -65,9 +65,7 @@ li:hover{
 }
 
 .home, .menu, .about{
-    background-color: white;
     display: none;
-    padding: 30px;
 }
 
 .home.showpage, .about.showpage, .menu.showpage{
@@ -76,8 +74,11 @@ li:hover{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    padding: 30px;
     color: white;
     display: flex;
+    flex-direction: column;
+    gap: 30px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -87,7 +88,7 @@ li:hover{
     padding: 30px;
     backdrop-filter: blur(10px) brightness(50%);
     border-radius: 5px;
-    max-width: var(--text-width);
+    width: var(--text-width);
     display: flex;
     flex-direction: column;
     gap: 30px;
